@@ -62,3 +62,32 @@ merge = [x,y]
 #no custom solution 😒
 
 
+
+x = np.array([1,2,3,4,5,6,7,8,9])
+
+print(x[x.shape[0] -3: x.shape[0]])
+print(x[:-1])
+
+print(x[::2])
+
+x = np.array([[1,2,3],[4,5,6]])
+
+even_numbers = np.where(x % 2 ==0)
+
+# print('result: ',end='')
+# for i in range(0,len(even_numbers[0])):
+#     print(x[even_numbers[0][i],even_numbers[1][i]],' ',end='')
+
+x = np.array([1,2,3,4,5,6,8,9])
+
+print(x.reshape(2,-1))
+
+
+print(x.reshape(2,4,1))
+
+print(x.reshape(-1))
+
+from numpy import random
+
+x=random.randint(100, size=(5))
+print(x)
